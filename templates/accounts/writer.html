@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <title>NextGen - {% block title %}{% endblock %}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+   
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+ 
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/writer_style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <!-- Topbar Start -->
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="left_area">
+            <h1>Tution<span>Spot</span></h1>
+        </div>
+        <div class="right_area">
+            <a href="{% url 'signin' %}" class = "logout_btn">Logout</a>
+        </div>
+    </header>
+    <!-- Topbar End -->
+
+    
+    <!-- Sidebar Start -->
+    <div class="sidebar">
+        <center>
+            <img src="{% static 'img/team-3.png' %}" class="profile_image" alt="">
+            <h4>Tutor Name</h4>
+        </center>
+        <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fa fa-book" aria-hidden="true"></i><span>Available orders</span></a>
+        <a href="#"><i class="fa fa-briefcase" aria-hidden="true"></i><span>Bids</span></a>
+        <a href="#"><i class="fa fa-hourglass-half" aria-hidden="true"></i><span>In Progress</span></a>
+        <a href="#"><i class="fa fa-check" aria-hidden="true"></i><span>Completed</span></a>
+        <a href="#"><i class="fas fa-desktop"></i><span>Quality Control</span></a>
+        <a href="#"><i class="fa fa-asterisk" aria-hidden="true"></i><span>Revision</span></a>
+        <a href="#"><i  class="fa fa-check-square" aria-hidden="true"></i><span>Approved</span></a>
+        <a href="#"><i class="fa fa-flag-checkered" aria-hidden="true"></i><span>Disputes</span></a>
+        <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i><span>Account</span></a>
+
+    </div>
+    <div class="content">
+       
+    </div>
+        
+</body>
+</html>
+
+
+   
+
